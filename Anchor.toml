@@ -5,7 +5,8 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-vault = "D47rvdsKkKr6BBVC612tB6oY26yZwJLqNgudZVGGRF8L"
+vault = "DvWrda6bUzwNZEquySWbZebRuYiLztbtpxwzFPESeqi3"
+wsol = "789JRYzNE9SMo2p6fL2NJyFTBxr8CPngiMuQGAQFJo4B"
 
 [registry]
 url = "https://api.apr.dev"
@@ -15,4 +16,4 @@ cluster = "Localnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "npx ts-node tests/wsol.test.ts"
